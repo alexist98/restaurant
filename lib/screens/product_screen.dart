@@ -1,6 +1,6 @@
+import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurante/datas/product_data.dart';
-import 'package:carousel_pro/carousel_pro.dart';
 
 class ProductScreen extends StatefulWidget {
   final ProductData product;
@@ -121,7 +121,9 @@ class _ProductScreenState extends State<ProductScreen> {
                     textColor: Colors.white,
                   ),
                 ),
-                SizedBox(height: 16.0,),
+                SizedBox(
+                  height: 16.0,
+                ),
                 Text(
                   "Descrição",
                   style: TextStyle(
