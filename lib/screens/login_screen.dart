@@ -9,7 +9,6 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
   final _emailController = TextEditingController();
   final _passController = TextEditingController();
 
@@ -107,15 +106,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           .of(context)
                           .primaryColor,
                       onPressed: () {
-                        if (_formKey.currentState.validate()) {
-
-                        }
+                        if (_formKey.currentState.validate()) {}
                         model.signIn(
                             email: _emailController.text,
                             pass: _passController.text,
                             onSuccess: _onSuccess,
-                            onFail: _onFail
-                        );
+                            onFail: _onFail);
                       },
                     ),
                   ),
@@ -123,8 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             );
           },
-        )
-    );
+        ));
   }
 
   void _onSuccess() {
@@ -132,12 +127,10 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _onFail() {
-    _scaffoldKey.currentState.showSnackBar(
-        SnackBar(content: Text("Falha ao Entrar"),
-          backgroundColor: Colors.redAccent,
-          duration: Duration(seconds: 3),
-        )
-    );
+    _scaffoldKey.currentState.showSnackBar(SnackBar(
+      content: Text("Falha ao Entrar"),
+      backgroundColor: Colors.redAccent,
+      duration: Duration(seconds: 3),
+    ));
   }
 }
-
