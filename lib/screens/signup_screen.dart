@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:restaurante/models/user_model.dart';
 import 'package:scoped_model/scoped_model.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUpScreen extends StatefulWidget {
+  @override
+  _SignUpScreenState createState() => _SignUpScreenState();
+}
+
+class _SignUpScreenState extends State<SignUpScreen> {
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
   final _passController = TextEditingController();
@@ -121,3 +126,5 @@ class SignUpScreen extends StatelessWidget {
   void _onSuccess() {}
   void _onFail() {}
 }
+
+
