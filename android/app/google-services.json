@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "790273395776",
+    "firebase_url": "https://restaurante-9aad2.firebaseio.com",
+    "project_id": "restaurante-9aad2",
+    "storage_bucket": "restaurante-9aad2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790273395776:android:9998a5e86a37e9c02f63a5",
+        "android_client_info": {
+          "package_name": "br.com.toigo.restaurante"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790273395776-blluo105fi4g55atvc530vib62ep9ckl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnvmHi7ChmH7pPWX6egv1DTy3755Vz--w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790273395776-blluo105fi4g55atvc530vib62ep9ckl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
