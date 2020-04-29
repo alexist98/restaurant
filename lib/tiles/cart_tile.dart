@@ -53,7 +53,7 @@ class CartTile extends StatelessWidget {
                       IconButton(
                         icon: Icon(Icons.remove),
                         color: Theme.of(context).primaryColor,
-                        onPressed: () {},
+                        onPressed: cartProduct.quantity > 1 ? () {} : null,
                       ),
                       Text(cartProduct.quantity.toString()),
                       IconButton(
@@ -63,7 +63,9 @@ class CartTile extends StatelessWidget {
                       FlatButton(
                         child: Text("Remover"),
                         textColor: Colors.grey[500],
-                        onPressed: cartProduct.quantity > 1 ? () {} : null,
+                        onPressed: () {
+
+                        },
                       ),
                     ],
                   ),
