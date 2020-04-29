@@ -3,6 +3,7 @@ import 'package:restaurante/models/cart_model.dart';
 import 'package:restaurante/models/user_model.dart';
 import 'package:restaurante/screens/login_screen.dart';
 import 'package:restaurante/tiles/cart_tile.dart';
+import 'package:restaurante/widgets/cart_price.dart';
 import 'package:restaurante/widgets/discount_card.dart';
 import 'package:restaurante/widgets/ship_card.dart';
 import 'package:scoped_model/scoped_model.dart';
@@ -97,6 +98,7 @@ class CartScreen extends StatelessWidget {
               ),
               DiscountCard(),
               ShitCard(),
+              CartPrice(),
             ],
           );
         }
