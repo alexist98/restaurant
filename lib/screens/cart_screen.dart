@@ -98,7 +98,7 @@ class CartScreen extends StatelessWidget {
               ),
               DiscountCard(),
               ShitCard(),
-              CartPrice(),
+              CartPrice(() {}),
             ],
           );
         }

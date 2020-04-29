@@ -13,6 +13,7 @@ class CartTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Widget _buildContent() {
+      CartModel.of(context).updatePrices();
       return Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
@@ -34,7 +35,7 @@ class CartTile extends StatelessWidget {
                   Text(
                     cartProduct.productData.title,
                     style:
-                        TextStyle(fontWeight: FontWeight.w500, fontSize: 17.0),
+                    TextStyle(fontWeight: FontWeight.w500, fontSize: 17.0),
                   ),
                   Text(
                     "Tamanho ${cartProduct.size}",
