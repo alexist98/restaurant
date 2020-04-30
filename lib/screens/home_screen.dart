@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurante/tabs/home_tab.dart';
+import 'package:restaurante/tabs/orders_tab.dart';
 import 'package:restaurante/tabs/products_tab.dart';
 import 'package:restaurante/widgets/CartButton.dart';
 import 'package:restaurante/widgets/custom_drawer.dart';
@@ -30,8 +31,13 @@ class HomeScreen extends StatelessWidget {
         Container(
           color: Colors.yellow,
         ),
-        Container(
-          color: Colors.green,
+        Scaffold(
+          appBar: AppBar(
+            title: Text("Meus Pedidos"),
+            centerTitle: true,
+          ),
+          body: OrdersTab(),
+          drawer: CustomDrawer(_pageController),
         ),
       ],
     );
