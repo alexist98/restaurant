@@ -28,9 +28,9 @@ class HomeScreen extends StatelessWidget {
           body: ProductsTab(),
           floatingActionButton: CartButton(),
         ),
-        Container(
+        /*Container(
           color: Colors.yellow,
-        ),
+        ),*/
         Scaffold(
           appBar: AppBar(
             title: Text("Meus Pedidos"),

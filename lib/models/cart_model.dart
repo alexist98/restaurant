@@ -86,8 +86,8 @@ class CartModel extends Model {
       if (c.productData != null) {
         price += c.quantity * c.productData.price;
       }
-      return price;
     }
+    return price;
   }
 
   double getDiscount() {
