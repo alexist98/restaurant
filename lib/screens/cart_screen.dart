@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:restaurante/models/cart_model.dart';
 import 'package:restaurante/models/user_model.dart';
 import 'package:restaurante/screens/login_screen.dart';
+import 'package:restaurante/screens/order_screen.dart';
 import 'package:restaurante/tiles/cart_tile.dart';
 import 'package:restaurante/widgets/cart_price.dart';
 import 'package:restaurante/widgets/discount_card.dart';
@@ -99,9 +100,12 @@ class CartScreen extends StatelessWidget {
               DiscountCard(),
               ShitCard(),
               CartPrice(() async {
-                String orderID = await model.finishOrder();
-                if (orderID != null) {
-                  print(orderID);
+                String orderId = await model.finishOrder();
+                if (orderId != null) {
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(
+                        builder: (context) => OrderScreen(orderId)),
+                  );
                 }
               }),
             ],
